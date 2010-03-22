@@ -72,7 +72,8 @@ void usage() {
   fprintf(stderr, "Query Type (exactly one required):\n");
   fprintf(stderr, "    card     List name of matching cards\n");
   fprintf(stderr, "    sink     List name of matching sinks\n");
-  fprintf(stderr, "    source   List name of matching sources\n\n");
+  fprintf(stderr, "    source   List name of matching sources\n");
+  fprintf(stderr, "    client   List name of matching clients\n\n");
   fprintf(stderr, "The remainder of the arguments are taken as name-value pairs\n");
   fprintf(stderr, "which must be separated by an equals sign. If the value contains,\n");
   fprintf(stderr, "spaces, it must be quoted to be considered a single value.\n\n");
