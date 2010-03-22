@@ -9,16 +9,20 @@ to automate various audio configuration changes.
 I hope you find it useful as well!
 
 =======
-
-Usage: paquery [options] [card|sink|source] [<propery=value> ...]
+Usage: paquery [options] [query_type] [<propery=value> ...]
 
 Options:
     -v       Verbose: list all properties for each match
+    -n       Numeric: print indexes instead of names
 
 Query Type (exactly one required):
-    card     List name of matching cards
-    sink     List name of matching sinks
-    source   List name of matching sources
+    module          List matching modules
+    client          List matching clients
+    card            List matching cards
+    sink            List matching sinks
+    source          List matching sources
+    sink-input      List matching sink-inputs
+    source-output   List matching source-outputs
 
 The remainder of the arguments are taken as name-value pairs
 which must be separated by an equals sign. If the value contains,
