@@ -98,8 +98,8 @@ void usage() {
   fprintf(stderr, "    card            List matching cards\n");
   fprintf(stderr, "    sink            List matching sinks\n");
   fprintf(stderr, "    source          List matching sources\n");
-  fprintf(stderr, "    sink-input      List matching sink-inputs\n\n");
-  fprintf(stderr, "    source-output   List matching source-outputs\n");
+  fprintf(stderr, "    sink-input      List matching sink-inputs\n");
+  fprintf(stderr, "    source-output   List matching source-outputs\n\n");
   fprintf(stderr, "The remainder of the arguments are taken as name-value pairs\n");
   fprintf(stderr, "which must be separated by an equals sign. If the value contains,\n");
   fprintf(stderr, "spaces, it must be quoted to be considered a single value.\n\n");
