@@ -2,6 +2,6 @@
 AM_CFLAGS = $(GLIB_CFLAGS) $(PULSEAUDIO_CLFLAGS)
 LDADD = $(GLIB_LIBS) $(PULSEAUDIO_LIBS)
 
-bin_PROGRAMS=pautil
-pautil_SOURCES=pautil.c
+bin_PROGRAMS=paquery
+paquery_SOURCES=paquery.c
 
