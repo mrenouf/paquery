@@ -1,1 +1,26 @@
-Sample readme file for pulsetool project.
+A simple tool to query various object names from PulseAudio.
+
+Things that can be queried are: devices, sinks, sources, and clients.
+Filtering can be done using a set of properties (name/value pairs).
+
+I wrote this tool to use in conjunction with pacmd in writing scripts 
+to automate various audio configuration changes.
+
+I hope you find it useful as well!
+
+=======
+
+Usage: paquery [options] [card|sink|source] [<propery=value> ...]
+
+Options:
+    -v       Verbose: list all properties for each match
+
+Query Type (exactly one required):
+    card     List name of matching cards
+    sink     List name of matching sinks
+    source   List name of matching sources
+
+The remainder of the arguments are taken as name-value pairs
+which must be separated by an equals sign. If the value contains,
+spaces, it must be quoted to be considered a single value.
+
