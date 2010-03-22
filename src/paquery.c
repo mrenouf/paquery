@@ -66,7 +66,7 @@ enum QueryType {
 };
 
 void usage() {
-  fprintf(stderr, "\nUsage: %s [options] [card|sink|source] [<propery=value> ...]\n\n", APP_NAME);
+  fprintf(stderr, "\nUsage: %s [options] [query_type] [<propery=value> ...]\n\n", APP_NAME);
   fprintf(stderr, "Options:\n");
   fprintf(stderr, "    -v       Verbose: list all properties for each match\n\n");
   fprintf(stderr, "Query Type (exactly one required):\n");
